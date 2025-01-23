@@ -26,8 +26,9 @@ const Register = () => {
     try {
       const result = await register(data).unwrap();
       if (result?.data?.token) {
-        localStorage.setItem("token", result.token);
-        localStorage.setItem("userName", result.user.user_name);
+        localStorage.setItem("token", result.data.token);
+        localStorage.setItem("id", result.data.id);
+        localStorage.setItem("userName", result.data.user.user_name);
         navigate("/");
       }
     } catch (error) {

@@ -28,6 +28,7 @@ const LogIn = () => {
       result = await login(data).unwrap();
       if (result?.token || !error) {
         localStorage.setItem("token", result.token);
+        localStorage.setItem("id", result.user.id);
         localStorage.setItem("userName", result.user.user_name);
         navigate("/");
       }

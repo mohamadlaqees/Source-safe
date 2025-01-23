@@ -1,7 +1,7 @@
 import { Navigate } from "react-router-dom";
 
 const PublicRoute = ({ children }) => {
-  const token = localStorage.getItem("token"); // Replace with Redux/Context if used
+  const token = localStorage.getItem("token");
   if (token) {
     return <Navigate to="/" />;
   }

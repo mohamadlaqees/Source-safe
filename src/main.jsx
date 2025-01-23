@@ -6,8 +6,8 @@ import store from "./store";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LogIn from "./pages/LogIn";
 import Register from "./pages/Register";
-import ProtectedRoute from "./components/ProtectedRoute";
-import PublicRoute from "./components/PublicRoute";
+import PublicRoute from "./components/routes/PublicRoute";
+import ProtectedRoute from "./components/routes/ProtectedRoute";
 
 const routes = createBrowserRouter(
   [

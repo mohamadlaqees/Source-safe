@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   drawerOpen: false,
-  overlay: false,
+  backdrop: false,
 };
 
 const drawerSlice = createSlice({
@@ -12,11 +12,11 @@ const drawerSlice = createSlice({
     openDrawer: (state, action) => {
       state.drawerOpen = action.payload.drawerOpen;
     },
-    openOverLay: (state, action) => {
-      state.overlay = action.payload.overlay;
+    openBackdrop: (state, action) => {
+      state.backdrop = action.payload.backdrop;
     },
   },
 });
 
 export default drawerSlice.reducer;
-export const { openDrawer, openOverLay} = drawerSlice.actions;
+export const { openDrawer, openBackdrop } = drawerSlice.actions;

@@ -23,6 +23,10 @@ export default {
       minWidth: {
         leftSide: "480px",
       },
+      screens: {
+        smallLeft: "880px",
+        aboveMobile: "400px",
+      },
     },
   },
   plugins: [scrollbar],
